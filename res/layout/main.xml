@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+ 
+    <TextView
+    	android:text="@string/main_title" 
+       	android:layout_width="wrap_content"
+      	android:layout_height="wrap_content"
+      	android:layout_gravity="center"
+      	android:layout_marginBottom="5dip"
+      	android:textSize="24.5sp"
+      	android:textColor="@color/title_color"></TextView>
+    
+	<FrameLayout
+		android:id="@+id/title_buttonHolder"
+		android:layout_weight="1"
+		android:layout_width="fill_parent"
+		android:layout_height="0dip">
+		<LinearLayout
+			android:id="@+id/title_buttonList"
+			android:layout_gravity="center_horizontal|center_vertical"
+			android:layout_width="wrap_content"
+			android:orientation="vertical"
+			android:layout_height="wrap_content">    
+			<Button
+			    android:id="@+id/one_player_button"
+			    android:layout_width="wrap_content"
+		       	android:layout_height="wrap_content"
+		       	android:width="220dp"
+		     	android:text="@string/one_player_label"></Button>
+			<Button
+			    android:id="@+id/two_player_button"
+			    android:layout_width="wrap_content"
+		       	android:layout_height="wrap_content"
+		       	android:width="220dp"
+		     	android:text="@string/two_players_label"></Button>
+			<Button
+			    android:id="@+id/continue_button"
+			    android:layout_width="wrap_content" 
+			    android:layout_height="wrap_content"
+			    android:width="220dp"
+			    android:text="@string/continue_label"></Button>
+			<Button
+			    android:id="@+id/exit_button"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:width="220dp"
+			    android:text="@string/exit_label" ></Button>
+		</LinearLayout>
+		
+    		
+    			
+	</FrameLayout>
+</LinearLayout>
